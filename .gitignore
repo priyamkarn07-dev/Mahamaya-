@@ -1,0 +1,5 @@
+*.log
+supervisord.pid
+supervisor.sock
+.DS_Store
+node_modules/
