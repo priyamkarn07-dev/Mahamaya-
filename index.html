@@ -71,13 +71,13 @@
         <header class="section-head">
           <p class="eyebrow">The Collection</p>
           <h2 class="section-title" id="catalogue-title">Choose Your Flavour</h2>
-          <p class="section-lead">Select a grade (size) and pack weight, set the quantity, and add to your order. Grades differ by flavour.</p>
+          <p class="section-lead">Each flavour is independent. Pick a grade (size) and pack weight, set the quantity, then add it to your order. Available grades differ by flavour.</p>
         </header>
         <div class="product-grid" id="productGrid">
           <!-- Product cards injected by app.js -->
         </div>
         <p class="placeholder-note" role="note">
-          Prices marked <em>“Price to be confirmed”</em> are placeholders while final pricing is finalised — ordering is disabled for those until confirmed.
+          Options marked <em>“Price to be confirmed”</em> cannot be added to a confirmed-price order yet — you can tap <strong>Request a Quote</strong> to ask for the price on WhatsApp.
         </p>
       </div>
     </section>
@@ -145,6 +145,7 @@
           </div>
 
           <div class="cart-filled" id="cartFilled" hidden>
+            <p class="cart-count-line" id="cartCountLine" aria-live="polite"></p>
             <ul class="cart-items" id="cartItems" aria-live="polite"></ul>
             <div class="cart-totals">
               <div class="cart-row">
