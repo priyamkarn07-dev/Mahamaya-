@@ -155,13 +155,31 @@ p{margin:0 0 1rem}
 .qty-input{width:46px;text-align:center;font-family:var(--sans);font-size:1rem;
   border:1px solid var(--line);border-radius:8px;padding:.4rem 0;-moz-appearance:textfield}
 .qty-input::-webkit-outer-spin-button,.qty-input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
-.pc-add{margin-top:auto}
+.pc-add{margin-top:auto;display:flex;flex-direction:column;gap:.6rem}
 .pc-add .btn{width:100%}
 .pc-unavailable{font-size:.82rem;color:var(--gold);background:rgba(189,161,94,.1);
   border:1px dashed var(--gold-soft);border-radius:8px;padding:.5rem .7rem;text-align:center}
 
+/* Added-to-order state */
+.pc-added{display:flex;align-items:center;justify-content:center;gap:.45rem;margin:0;
+  font-size:.85rem;font-weight:500;color:var(--green);letter-spacing:.02em}
+.pc-added-ico{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;
+  background:var(--green);color:var(--cream);font-size:.72rem}
+.product-card.is-added{border-color:var(--green-soft);box-shadow:0 0 0 1px var(--green-soft),0 18px 44px -24px rgba(36,48,32,.45)}
+.product-card.just-added{animation:pop .5s ease}
+@keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.02)}100%{transform:scale(1)}}
+
+/* Image fallback box when a product photo is missing/broken */
+.pc-img-fallback{width:76%;aspect-ratio:1/1;display:grid;place-items:center;
+  border:1px dashed var(--gold-soft);border-radius:12px;color:var(--gold);
+  font-family:var(--serif);letter-spacing:.14em;font-weight:600;
+  background:linear-gradient(160deg,var(--ivory-2),var(--ivory))}
+
+.catalogue-empty{text-align:center;color:var(--muted);padding:2rem 0}
+
 .placeholder-note{text-align:center;color:var(--muted);font-size:.85rem;margin-top:2rem}
 .placeholder-note em{color:var(--gold);font-style:normal}
+.placeholder-note strong{color:var(--green-deep)}
 
 /* ============================ ABOUT ============================ */
 .about{background:var(--cream)}
